@@ -29,10 +29,10 @@ After installing dependencies:
 npm install
 npm run build
 npm test
-node dist/cli.js examples/hello.tsx --out generated/Hello.swift
+npm run compile:example
 ```
 
-The generated file contains a `Hello: View` SwiftUI view. Integrate that generated view into an Xcode watchOS application manually for now.
+The generated file contains a `Hello: View` SwiftUI view at `generated/Hello.swift`. Integrate that generated view into an Xcode watchOS application manually for now.
 
 ## Design principles
 
