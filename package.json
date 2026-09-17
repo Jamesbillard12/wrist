@@ -6,12 +6,12 @@
   "license": "MIT",
   "type": "module",
   "bin": {
-    "wrist": "./dist/cli.js"
+    "wrist": "./dist/src/cli.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --test dist/tests/*.test.js",
-    "compile:example": "npm run build && node dist/cli.js examples/hello.tsx --out generated/Hello.swift"
+    "compile:example": "npm run build && node dist/src/cli.js examples/hello.tsx --out generated/Hello.swift"
   },
   "engines": {
     "node": ">=22"
